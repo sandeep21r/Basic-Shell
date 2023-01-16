@@ -1,0 +1,14 @@
+all: bin_mkdir bin_date bin_cat bin_rm bin_ls bin_shell
+
+bin_date : date.c
+	gcc date.c -o bin_date
+bin_mkdir : mkdir.c
+	gcc mkdir.c -o bin_mkdir
+bin_rm : rm.c
+	gcc rm.c -o bin_rm
+bin_ls : ls.c
+	gcc ls.c -o bin_ls
+bin_cat : cat.c
+	gcc cat.c -o bin_cat
+bin_shell : Shell.c
+	gcc Shell.c -o bin_shell
